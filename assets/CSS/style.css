@@ -3,45 +3,38 @@
 
 
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #F9F9F9;
+  font-size: 14px;
+  font-weight: 400;
  
-  height: 100vh;
  
   
 }
+
+
+main{
+   
+  display: flex;
+  justify-content: center;
+   
+}
+
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+    
 }
-.top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 56px;
-    background-color: #fff;
-    width: auto;
-    min-width: 1440px;
-   
 
-}
-main{
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-   
-}
 .search-container {
   display: flex;
   background-color: white;
@@ -92,26 +85,120 @@ main{
     align-items: center;
     justify-content: space-between;
 }
-.container{
-    min-width: 1440px;
-    
-    display: flex;
-    justify-content: space-between;
-    padding-left: 190px;
-    padding-right: 190px;
-}
-ul li{
-   list-style: none;
-}
-.tumblr-li{
+
+.top {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 56px;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+   
+
 }
-.tumblr-img{
-    height: 90px;
-    width: 190px;
+.video-principal{
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 952px;
 }
-.tumblr-txt{
-    width: 196px;
+.watch-video iframe{
+  width: 952px;
+  height: 537px;
+  margin-bottom: 16px;
+ 
+}
+
+.iteration{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 902px;
+  margin-top: 16px;
+}
+#iteration-icons{
+  display: flex;
+  gap: 12px;
+}
+#iteration-icons p{
+  color: black;
+  font-weight: 600;
+}
+
+.watch-video{
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 600;
+  align-items: flex-start;
+}
+#insc-button button{
+  width: 159px;
+  height: 40px;
+  border-radius: 2px;
+  background: #C00;
+  border: 1px solid red;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 8px;
+}
+
+#infos{
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px 0 16px 0;
+}
+
+#description{
+  width: 550px;
+  height: 64px;
+  color: #515151;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.recommended{
+  padding-left: 25px;
+  max-width: 500px;
+  max-height: 100px;
+}
+
+
+.recommended-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.recommended-content-info{
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 0 0 16px;
+}
+
+.recommended-content-info h3{
+  padding: 0 0 5px 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.recommended-content-info p{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 12px;
 }
